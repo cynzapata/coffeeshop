@@ -1,24 +1,24 @@
 /* This style sheet is used to modify the apperance of the website */
 /* Selects background color and padding of all pagess */
 * {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lora', serif;
   font-weight: 400;
 }
 
 html, body {
   margin: 0;
-  padding: 10px;
+  
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #232C33;
-  background-color: #C5DCA0;
+  color: #ffffff;
+  background-color: #020300;
 }
 
 h1, a {
-  color: #232C33;
+  color: #ffffff;
 }
 
 h1 {
@@ -27,16 +27,17 @@ h1 {
 
 /* added color to h1/title when mouse hovers it */
 .header a:hover {
-  color: white;
+  color: #1eb4d6;
 }
 
 /* Allows header(title and nav bar) to stay at the top of the page */
 .header {
+  background-color: #020300;
+  color: #ffffff;
   top: 0;
   right: 0;
   z-index: 1000;
   width: 100%;
-  background-color: #C5DCA0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,7 +62,6 @@ h1 {
 
 .icon a {
   font-size: 1.3rem;
-  color: #232C33;
   margin-right: 18px;
   margin-left: 5px;
   -webkit-transition: all 0.5s ease;
@@ -70,7 +70,8 @@ h1 {
 
 /* Selects spacing of content in containers */
 .container {
-  background-color: #C5DCA0;
+  background-color: #020300;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,20 +135,20 @@ h1 {
 }
 
 .nav a:hover {
-  color: white;
+  color: #1eb4d6;
 }
 
 #insta-icon {
   font-size: 2rem;
-  color: #232C33;
+  color: #ffffff;
 }
 
 #insta-icon:hover {
-  color: white;
+  color: #1eb4d6;
 }
 
 #menu-icon {
-  color: #232C33;
+  color: #ffffff;
   font-size: 2rem;
   cursor: pointer;
   z-index: 10001;
@@ -254,13 +255,13 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: #C5DCA0;
+    background: #020300;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
   .nav a {
     display: block;
-    color: #232C33;
+    color: #ffffff;
     padding: 10;
     margin: 0px 0px 40px 0px;
     font-size: 2.2rem;

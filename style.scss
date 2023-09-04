@@ -1,11 +1,11 @@
-$text-color: #232C33;
-$bg-color: #C5DCA0;
-$hover-color: white;
+$text-color: #ffffff;
+$bg-color: #020300;
+$hover-color: rgb(30, 180, 214);
 
 /* This style sheet is used to modify the apperance of the website */
 /* Selects background color and padding of all pagess */
 * {
-    font-family: "Lato", sans-serif;
+  font-family: 'Lora', serif;
     font-weight: 400;
   }
   
@@ -33,11 +33,12 @@ $hover-color: white;
   
   /* Allows header(title and nav bar) to stay at the top of the page */
   .header {
+    background-color: $bg-color;
+    color: $text-color;
     top: 0;
     right: 0;
     z-index: 1000;
     width: 100%;
-    background-color: $bg-color;
     display: flex;
     padding: 10px;
     justify-content: space-between;
@@ -52,7 +53,7 @@ $hover-color: white;
   
   .icon a {
     font-size: 1.3rem;
-    color: $text-color;
+   
     margin-right: 18px;
     margin-left: 5px;
     transition: all 0.5s ease;
@@ -61,6 +62,7 @@ $hover-color: white;
   /* Selects spacing of content in containers */
   .container {
     background-color: $bg-color;
+    color: $text-color;
     display: flex;
     flex-direction: column;
     justify-content: center;
