@@ -1,1 +1,273 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/* This style sheet is used to modify the apperance of the website */
+/* Selects background color and padding of all pagess */
+* {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+html, body {
+  margin: 0;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #232C33;
+  background-color: #C5DCA0;
+}
+
+h1, a {
+  color: #232C33;
+}
+
+h1 {
+  margin: 15px 22px;
+}
+
+/* added color to h1/title when mouse hovers it */
+.header a:hover {
+  color: white;
+}
+
+/* Allows header(title and nav bar) to stay at the top of the page */
+.header {
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #C5DCA0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10px;
+}
+
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon a {
+  font-size: 1.3rem;
+  color: #232C33;
+  margin-right: 18px;
+  margin-left: 5px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* Selects spacing of content in containers */
+.container {
+  background-color: #C5DCA0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+/* Selects spacing of content in box class */
+.container .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* Adds columns to box class */
+.container .box .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 32.5%;
+}
+
+/* Allows all images to have the same size in the columns */
+.container .box .gallery img {
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+.nav {
+  margin: 15px 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+}
+
+/* Items on the nav bar will be spaced out by 14px */
+.nav li {
+  padding: 14px;
+}
+
+.nav a:hover {
+  color: white;
+}
+
+#insta-icon {
+  font-size: 2rem;
+  color: #232C33;
+}
+
+#insta-icon:hover {
+  color: white;
+}
+
+#menu-icon {
+  color: #232C33;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+/* Removes dots from nav bar list */
+ul {
+  list-style-type: none;
+  margin: 28;
+  padding: 0;
+}
+
+/* Listed items will be aligned to the left */
+li {
+  float: left;
+  display: block;
+}
+
+/* Allows links and text to be on the same line when displayed on page */
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Selects spacing and alignment of content/text in the contact page */
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  text-align: left;
+  margin: 0px 20px 0 25px;
+  padding-bottom: 40px;
+}
+
+.contact a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+/* Selects spacing and alignment of content/text in the bio page */
+.bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  text-align: left;
+  margin: 0px 20px 0 25px;
+  padding-bottom: 40px;
+}
+
+.bio a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+/* 648 Ensures you only have one column of photos on breakpoint/small screen view */
+@media only screen and (max-width: 1050px) {
+  .container .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .box .gallery {
+    width: 100%;
+  }
+  #menu-icon {
+    display: block;
+    font-size: 40px;
+  }
+  .nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    padding: 50px 60px;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #C5DCA0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .nav a {
+    display: block;
+    color: #232C33;
+    padding: 10;
+    margin: 0px 0px 40px 0px;
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+  .nav.open {
+    left: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
