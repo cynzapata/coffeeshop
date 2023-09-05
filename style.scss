@@ -19,6 +19,7 @@ $hover-color: rgb(30, 180, 214);
   }
   
   h1, a {
+    
     color: $text-color;
     text-decoration: none;
     display: inline-block;
@@ -87,6 +88,8 @@ $hover-color: rgb(30, 180, 214);
   }
   
   .navbar {
+    background-color: $bg-color;
+     color: $text-color;
     margin: 15px 22px;
     display: flex;
     font-size: 20px;
@@ -113,7 +116,9 @@ $hover-color: rgb(30, 180, 214);
     margin: 28;
     padding: 0;
   }
-
+  h1 {
+    margin: 15px 22px;
+  }
   
   .previous {
     background-color: $bg-color;
