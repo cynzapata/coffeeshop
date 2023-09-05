@@ -5,6 +5,7 @@ $hover-color: rgb(30, 180, 214);
 /* This style sheet is used to modify the apperance of the website */
 /* Selects background color and padding of all pagess */
 * {
+  
   font-family: 'Lora', serif;
     font-weight: 400;
   }
@@ -29,8 +30,7 @@ $hover-color: rgb(30, 180, 214);
 
   .arrow a:hover {
     color: $hover-color;
-    background-color: #ddd;
-    color: black;
+    
   }
  
   /* added color to h1/title when mouse hovers it */
@@ -40,8 +40,7 @@ $hover-color: rgb(30, 180, 214);
   
   /* Allows header(title and nav bar) to stay at the top of the page */
   .header {
-    background-color: $bg-color;
-    color: $text-color;
+   
     top: 0;
     right: 0;
     z-index: 1000;
@@ -59,6 +58,7 @@ $hover-color: rgb(30, 180, 214);
   .container {
     background-color: $bg-color;
      color: $text-color;
+     
     display: flex;
     flex-direction: column;
     justify-content: center;

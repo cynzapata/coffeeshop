@@ -24,8 +24,6 @@ h1, a {
 
 .arrow a:hover {
   color: #1eb4d6;
-  background-color: #ddd;
-  color: black;
 }
 
 /* added color to h1/title when mouse hovers it */
@@ -35,8 +33,6 @@ h1, a {
 
 /* Allows header(title and nav bar) to stay at the top of the page */
 .header {
-  background-color: #020300;
-  color: #ffffff;
   top: 0;
   right: 0;
   z-index: 1000;
