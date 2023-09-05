@@ -91,18 +91,18 @@ $hover-color: rgb(30, 180, 214);
     border-radius: 5px;
   }
   
-  .nav {
+  .navbar {
     margin: 15px 22px;
     display: flex;
     font-size: 20px;
   }
   
   /* Items on the nav bar will be spaced out by 14px */
-  .nav li {
+  .navbar li {
     padding: 14px;
   }
   
-  .nav a:hover {
+  .navbar a:hover {
     color: $hover-color;
   }
   
