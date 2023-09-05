@@ -11,7 +11,7 @@ $hover-color: rgb(30, 180, 214);
   
   html, body {
     margin: 0;
-    padding: 10px;
+    
     align-items: center;
     box-sizing: border-box;
     color: $text-color;
@@ -22,12 +22,9 @@ $hover-color: rgb(30, 180, 214);
     color: $text-color;
     text-decoration: none;
     display: inline-block;
-    padding: 8px 16px;
+   
   }
   
-  h1 {
-    margin: 15px 22px;
-  }
 
   .arrow a:hover {
     color: $hover-color;
