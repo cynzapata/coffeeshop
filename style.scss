@@ -62,7 +62,7 @@ $hover-color: rgb(30, 180, 214);
   /* Selects spacing of content in containers */
   .container {
     background-color: $bg-color;
-    color: $text-color;
+     color: $text-color;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,15 +103,6 @@ $hover-color: rgb(30, 180, 214);
   }
   
   .nav a:hover {
-    color: $hover-color;
-  }
-  
-  #insta-icon {
-    font-size: 2rem;
-    color: $text-color;
-  }
-  
-  #insta-icon:hover {
     color: $hover-color;
   }
   

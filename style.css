@@ -7,7 +7,7 @@
 
 html, body {
   margin: 0;
-  
+  padding: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -135,15 +135,6 @@ h1 {
 }
 
 .nav a:hover {
-  color: #1eb4d6;
-}
-
-#insta-icon {
-  font-size: 2rem;
-  color: #ffffff;
-}
-
-#insta-icon:hover {
   color: #1eb4d6;
 }
 
