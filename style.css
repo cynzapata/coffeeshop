@@ -12,12 +12,9 @@ html, body {
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #ffffff;
-  background-color: #020300;
 }
 
 h1, a {
-  color: #ffffff;
   text-decoration: none;
   display: inline-block;
 }
@@ -52,8 +49,8 @@ h1, a {
 
 /* Selects spacing of content in containers */
 .container {
-  background-color: #020300;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #020300;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,8 +101,8 @@ h1, a {
 }
 
 .navbar {
-  background-color: #020300;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #020300;
   margin: 15px 22px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,7 +120,7 @@ h1, a {
 }
 
 #coffee-cup {
-  color: #ffffff;
+  color: #020300;
   font-size: 2rem;
 }
 
@@ -139,21 +136,21 @@ h1 {
 }
 
 .prev {
-  background-color: #020300;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #020300;
   text-decoration: none;
 }
 
 .caption-container {
   text-align: center;
-  background-color: #020300;
+  background-color: #ffffff;
   padding: 2px 16px;
-  color: #ffffff;
+  color: #020300;
 }
 
 .next {
-  background-color: #020300;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #020300;
   text-decoration: none;
 }
 
@@ -200,13 +197,12 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: #020300;
+    background: #ffffff;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
   .nav a {
     display: block;
-    color: #ffffff;
     padding: 10;
     margin: 0px 0px 40px 0px;
     font-size: 2.2rem;

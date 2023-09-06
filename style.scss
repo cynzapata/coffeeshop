@@ -1,5 +1,5 @@
-$text-color: #ffffff;
-$bg-color: #020300;
+$text-color: #020300;
+$bg-color: #ffffff;
 $hover-color: rgb(30, 180, 214);
 
 /* This style sheet is used to modify the apperance of the website */
@@ -15,13 +15,12 @@ $hover-color: rgb(30, 180, 214);
     
     align-items: center;
     box-sizing: border-box;
-    color: $text-color;
-    background-color: $bg-color;
+    
   }
   
   h1, a {
     
-    color: $text-color;
+    
     text-decoration: none;
     display: inline-block;
    
@@ -56,7 +55,7 @@ $hover-color: rgb(30, 180, 214);
   
   /* Selects spacing of content in containers */
   .container {
-    background-color: $bg-color;
+   background-color: $bg-color;
      color: $text-color;
      
     display: flex;
@@ -181,7 +180,7 @@ $hover-color: rgb(30, 180, 214);
     }
     .nav a {
       display: block;
-      color: $text-color;
+      
       padding: 10;
       margin: 0px 0px 40px 0px;
       font-size: 2.2rem;
