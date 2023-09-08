@@ -1,6 +1,7 @@
 $text-color: #020300;
 $bg-color: #ffffff;
 $hover-color: rgb(30, 180, 214);
+$green: #1ECD97;
 
 /* This style sheet is used to modify the apperance of the website */
 /* Selects background color and padding of all pagess */
@@ -16,7 +17,24 @@ $hover-color: rgb(30, 180, 214);
     box-sizing: border-box;
     
   }
-  
+
+  a.button3{
+     display:inline-block;
+     padding:0.3em 1.2em;
+     margin:0 0.3em 0.3em 0;
+     border-radius:2em;
+     box-sizing: border-box;
+     text-decoration:none;
+     font-family:'Roboto',sans-serif;
+     font-weight:300;
+     color:#FFFFFF;
+     background-color:#4eb5f1;
+     text-align:center;
+     transition: all 0.2s;
+    }
+    a.button3:hover{
+     background-color:#4095c6;
+    }
   h1, a {
     
     text-decoration: none;
