@@ -13,6 +13,7 @@ html, body {
 
 img {
   max-width: 100%;
+  gap: 2em;
 }
 
 a h1,
