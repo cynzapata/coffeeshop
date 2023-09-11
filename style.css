@@ -131,24 +131,4 @@ h1 {
 li {
   float: left;
   display: block;
-}
-
-/* Allows links and text to be on the same line when displayed on page */
-a {
-  display: inline-block;
-  text-decoration: none;
-}
-
-/* 648 Ensures you only have one column of photos on breakpoint/small screen view */
-@media only screen and (max-width: 1050px) {
-  .container .box {
-    flex-direction: column;
-  }
-  .container .box .mySlides {
-    width: 100%;
-  }
-  #cofee-cup {
-    display: block;
-    font-size: 40px;
-  }
 }/*# sourceMappingURL=style.css.map */
