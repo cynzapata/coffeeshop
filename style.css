@@ -11,6 +11,10 @@ html, body {
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 a h1,
 a {
   text-decoration: none;

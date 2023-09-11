@@ -25,11 +25,3 @@ function showSlides(n) {
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
 
-let menu = document.querySelector('#coffee-cup');
-let nav = document.querySelector('.nav');
-
-//When the sidebar menu icon is clicked, the list of websites will open
-menu.onclick = () => {
-    menu.classList.toggle('bx-x');
-    nav.classList.toggle('open');
-};
