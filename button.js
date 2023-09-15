@@ -1,43 +1,23 @@
-const btns = document.querySelectorAll('.buttons button');
-const imgs = document.querySelectorAll('.images img');
+//the purpose of this js file is to filter through the images
+//when the user clicks on a specific city 
+const buttons = document.querySelectorAll('.btns button');
+const imgs = document.querySelectorAll('.cafe img');
 
-for(let i=1; 1<btns.length; i++){
-  btns[i].addEventListener('click', filterImg);
-}
+const imgFilter = e => {
+    document.querySelectorAll(".active").classList.remove("active");
+    e.target.classList.add("active");
+    
+    imgs.forEach(img => {
+        img.classLisd.add("hide");
+        if(img.CDATA_SECTION_NODE.name === e.target.dataset.name || e.target.data.name === "all"){
+            img.classList.add("hide");
+        }
+    });
+};
 
-function setActiveBtn(e) {
-  btns.forEach(btn =>{
-    btn.classList.remove('btn-clicked');
-  });
+  buttons.forEach(button => button.addEventListener('click', imgFilter));
 
-  e.target.classList.add('btn-clicked');
-}
 
-function filterImg(e){
-  setActiveBtn(e);
 
-  imgs.forEach(img =>{
-    img.classList.remove('img-shrink');
-    img.classList.add('img-expand');
 
-    const imgType = parseInt(img.dataset.img);
-
-    const btnType = parseInt(e.target.dataset.btn);
-
-    if(imgType !== btnType) {
-      img.classList.remove('img-expand');
-      img.classList.add('img-shrink');
-    }
-  });
-}
-
-btns[0].addEventListener('click', (e) => {
-  setActiveBtn(e);
-  imgs.forEach(img => {
-    img.classList.remove('img-shrink');
-    img.classList.add('img-expanded');
-  });
-});
-
-l
 
