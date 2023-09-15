@@ -1,11 +1,98 @@
+<!---This class contains code for the home page in spanish-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+     <!-- Class Title -->
+    <title>Cafe Main Page in Spanish</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <!-- Custom CSS for index.html -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Stylesheet for coffee icon and bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
+     <!-- Container to hold navbar and brand/title-->
+    <div class="container-lg">
+        <nav class="navbar navbar-expand-lg">
+            
+         <!-- Title/brand-->
+         <h1><a class="navbar-brand fs-3 ms-3" href="index.html">C.S.R.</a></h1>
+
+         <!-- Button to change the language of the page-->
+         <li class="navbar-item dropdown">
+										<!-- Main page in spanish language-->
+            <a class="navbar-link dropdown-toggle" href="spanishindex.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Español
+            </a>
+												<!-- Dropdown menu of languages-->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="japaneseindex.html">Japonés</a></li>
+              <li><a class="dropdown-item" href="koreanindex.html">Coreano</a></li>
+              <li><a class="dropdown-item" href="index.html">Inglés</a></li>
+            </ul>
+          </li>
+          
+										 <!-- Menu Icon when on phone -->
+											<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+												<i class='bx bxs-coffee-alt bx-md' id="coffee-cup"></i>
+										</button>
+
+										<div class=" collapse navbar-collapse " id="btn">
+          <!-- Nav bar Pages-->
+         <ul class="navbar-nav ms-auto">
+										<!-- Japan Page-->
+            <li class="nav-item active">
+                <a class="nav-link" href="japan.html">JAPÓN</a>
+             </li>  
+													<!-- South Korea Page-->
+             <li class="nav-item active">
+                <a class="nav-link" href="southkorea.html">COREA DEL SUR</a>
+             </li>
+
+													<!-- United States Page-->
+             <li class="nav-item active">
+                <a class="nav-link" href="unitedstates.html">ESTADOS UNIDOS</a>
+             </li>
+            </ul>
+											</div>
+												
+            
+</div>
+
+<!---container to hold title of webpage-->
+<div class="container-lg">
+    <div class="row">
+        <div class="col-sm-12">
+        <h1 class="text-center">RECOMENDACIONES</h1>
+    </div>
     
+    <div class="col-sm-12">
+        <h1 class="text-center">DE CAFÉS</h1>
+        </div>
+    </div> 
+</div> 
+
+<!-- this container holds the image of the home page -->
+    <div class="container-lg">
+        <div class="box">
+         <div class="mySlides">
+              <img src="cafeinhanok.jpeg">    
+          </div>
+   
+</div></div>
+<!-- Breaks to add space at the footer of the page-->
+<br>
+<br>
+<br>
+<!---custom js file links-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</div>
 </body>
 </html>
