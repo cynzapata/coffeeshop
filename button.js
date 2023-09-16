@@ -8,14 +8,14 @@ const imgFilter = e => {
     e.target.classList.add("active");
     
     imgs.forEach(img => {
-        img.classLisd.add("hide");
-        if(img.CDATA_SECTION_NODE.name === e.target.dataset.name || e.target.data.name === "all"){
+        img.classList.add("hide");
+        if(img.data.name === e.target.data.name || e.target.data.name === "all"){
             img.classList.add("hide");
         }
     });
 };
 
-  buttons.forEach(button => button.addEventListener('click', imgFilter));
+  buttons.forEach(button => button.addEventListener("click", imgFilter));
 
 
 
