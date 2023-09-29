@@ -27,8 +27,6 @@
          <!-- Title/brand-->
          <h1><a class="navbar-brand fs-3 ms-3" href="index.html">C.S.R.</a></h1>
 
-
-
          <!-- Button to change the language of the page-->
          <li class="navbar-item dropdown">
             <a class="navbar-link dropdown-toggle" href="index.html" id="navbarDropdownMenuLink" role="button"
@@ -58,19 +56,15 @@
                <li class="nav-item active">
                   <a class="nav-link" href="unitedstates.html">UNITED STATES</a>
                </li>
-               <!-- <li class="nav-item active">
-                 <a class="nav-link" href="#">ABOUT</a>
-              </li> -->
             </ul>
          </div>
-
-
+      </nav>
    </div>
 
-   <!-- Container to hold main content of page -->
+   <!-- Container to hold main content of the page -->
    <div class="container-lg">
       <div class="row">
-         <!-- Country name/main title of page -->
+         <!-- Country name/main title of the page -->
          <h1 class="text-center">JAPAN</h1>
       </div>
       <br>
@@ -78,69 +72,71 @@
 
          <!-- Container to hold text(city) and buttons -->
          <div class="col-md-4">
-
             <div class="row">
                <h2>City</h2>
             </div>
-
             <br>
 
-            <!-- buttons to allow user to filter through images baedd on city -->
+            <!-- buttons to allow users to filter through images based on city -->
             <div class="btns row">
                <div class="btns col-lg-3">
-                  <button type="button" data="all" class="btn btn-outline-dark active">All</button>
+                  <button type="button" class="btn btn-outline-dark btn-block" data-name="Kyoto">Kyoto</button>
                </div>
                <div class="btns col-lg-3">
-                  <button type="button" data="1" class="btn btn-outline-dark">Kyoto</button>
+                  <button type="button" class="btn btn-outline-dark btn-block" data-name="Osaka">Osaka</button>
                </div>
                <div class="btns col-lg-3">
-                  <button type="buttons" data="2" class="btn btn-outline-dark">Osaka</button>
+                  <button type="button" class="btn btn-outline-dark btn-block" data-name="Tokyo">Tokyo</button>
                </div>
                <div class="btns col-lg-3">
-                  <button type="button" data="3" class="btn btn-outline-dark">Tokyo</button>
+                  <button type="button" class="btn btn-outline-dark btn-block" data-name="All">All</button>
                </div>
             </div>
          </div>
+
          <!-- Pictures of cafes -->
          <div class="col-md-8">
             <div class="row">
-               <div class="img col-md-4" data="2">
-                  <img class="cafe" src="osakabluebottle.jpg" alt="img">
+               <div class="images col-md-4" data-name="Osaka">
+                  <img class="img-fluid cafe" src="osakabluebottle.jpg" alt="Blue Bottle Cafe">
                   <h3>Blue Bottle Cafe</h3>
                </div>
-               <div class="img col-md-4" data="3">
-                  <img class="cafe" src="tokyostarbuckscafe.jpg" alt="img">
+
+               <div class="images col-md-4" data-name="Tokyo">
+                  <img class="img-fluid cafe" src="tokyostarbuckscafe.jpg" alt="Starbucks">
                   <h3>Starbucks</h3>
                </div>
-               <div class="images col-md-4" data="2">
-                  <img class="cafe" src="eight.jpg" alt="img">
+
+               <div class="images col-md-4" data-name="Osaka">
+                  <img class="img-fluid cafe" src="eight.jpg" alt="Otto Coffee & Sweets">
                   <h3>Otto Coffee & Sweets</h3>
                </div>
             </div>
             <br>
-            <div class="images row">
-               <div class="images col-md-4" data="1">
-                  <img class="cafe" src="kumonochacafe.jpg" alt="img">
+            <div class="row">
+               <div class="images col-md-4" data-name="Kyoto">
+                  <img class="img-fluid cafe" src="kumonochacafe.jpg" alt="kumonocha cafe">
+                  <h3>Kumonocha Cafe</h3>
+               </div>
+
+               <div class="images col-md-4">
+                  <img class="img-fluid cafe" src="kumonochacafe.jpg" alt="kumonocha cafe">
                   <h3>Kumonocha Cafe</h3>
                </div>
                <div class="images col-md-4">
-
-               </div>
-               <div class="images col-md-4">
-
+                  <img class="img-fluid cafe" src="kumonochacafe.jpg" alt="kumonocha cafe">
+                  <h3>Kumonocha Cafe</h3>
                </div>
             </div>
          </div>
-
-
       </div>
-
-
-      <script src="button.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
-      </script>
    </div>
+
+   <script src="button.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 
 </html>
+
+

@@ -1,22 +1,35 @@
-//the purpose of this js file is to filter through the images
-//when the user clicks on a specific city 
 const buttons = document.querySelectorAll('.btns button');
-const imgs = document.querySelectorAll('.cafe img');
+const images = document.querySelectorAll('.images');
 
-const imgFilter = e => {
-    document.querySelectorAll(".active").classList.remove("active");
-    e.target.classList.add("active");
-    
-    imgs.forEach(img => {
-        img.classList.add("hide");
-        if(img.data.name === e.target.data.name || e.target.data.name === "all"){
-            img.classList.add("hide");
-        }
-    });
+const imgFilter = (e) => {
+  const cityName = e.target.dataset.name;
+
+  images.forEach((imageContainer) => {
+    const image = imageContainer.querySelector('.cafe');
+    const title = imageContainer.querySelector('h3');
+
+    if (cityName === 'all' || image.dataset.name === cityName) {
+      imageContainer.classList.remove('hide');
+    } else {
+      imageContainer.classList.add('hide');
+    }
+  });
 };
 
-  buttons.forEach(button => button.addEventListener("click", imgFilter));
+buttons.forEach((button) => button.addEventListener('click', imgFilter));
 
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
 
 
 

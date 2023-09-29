@@ -1,14 +1,16 @@
-/* This style sheet is used to modify the apperance of the website */
-/* Selects background color and padding of all pagess */
 * {
   font-family: "Lora", serif;
   font-weight: 400;
+  box-sizing: border-box;
 }
 
 html, body {
   margin: 0;
-  align-items: center;
-  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  margin-bottom: 50px;
 }
 
 img {
@@ -16,22 +18,15 @@ img {
   gap: 2em;
 }
 
-a h1,
 a {
   text-decoration: none;
   display: inline-block;
 }
 
-.arrow a:hover {
-  color: rgb(30, 180, 214);
-}
-
-/* added color to h1/title when mouse hovers it */
 .header a:hover {
   color: rgb(30, 180, 214);
 }
 
-/* Allows header(title and nav bar) to stay at the top of the page */
 .header {
   top: 0;
   right: 0;
@@ -44,7 +39,6 @@ a {
   padding-bottom: 10px;
 }
 
-/* Selects spacing of content in containers */
 .container {
   background-color: #ffffff;
   color: #020300;
@@ -55,22 +49,19 @@ a {
   text-align: center;
 }
 
-/* Selects spacing of content in box class */
 .container .box {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-/* Adds columns to box class */
-.container .box .mySlides {
+.container .box .images {
   display: flex;
   flex-direction: column;
   width: 45%;
 }
 
-/* Allows all images to have the same size in the columns */
-.container .box .mySlides img {
+.container .box .images img {
   width: 100%;
   padding-bottom: 15px;
   border-radius: 5px;
@@ -84,7 +75,6 @@ a {
   font-size: 20px;
 }
 
-/* Items on the nav bar will be spaced out by 14px */
 .navbar li {
   padding: 14px;
 }
@@ -98,7 +88,6 @@ a {
   font-size: 2rem;
 }
 
-/* Removes dots from nav bar list */
 ul {
   list-style-type: none;
   margin: 28;
@@ -109,27 +98,11 @@ h1 {
   margin: 15px 22px;
 }
 
-.prev {
-  background-color: #ffffff;
-  color: #020300;
-  text-decoration: none;
+.btns button:hover {
+  background-color: rgb(30, 180, 214);
+  color: #ffffff;
 }
 
-.caption-container {
-  text-align: center;
-  background-color: #ffffff;
-  padding: 2px 16px;
-  color: #020300;
-}
-
-.next {
-  background-color: #ffffff;
-  color: #020300;
-  text-decoration: none;
-}
-
-/* Listed items will be aligned to the left */
-li {
-  float: left;
-  display: block;
+.hide {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

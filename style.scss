@@ -3,150 +3,115 @@ $bg-color: #ffffff;
 $hover-color: rgb(30, 180, 214);
 $green: #1ECD97;
 
-/* This style sheet is used to modify the apperance of the website */
-/* Selects background color and padding of all pagess */
 * {
   font-family: 'Lora', serif;
-    font-weight: 400;
-  }
-  
-  html, body {
-    margin: 0;
-    
-    align-items: center;
-    box-sizing: border-box;
-    
-  }
+  font-weight: 400;
+  box-sizing: border-box;
+}
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
-  img{
-    max-width: 100%;
-    gap: 2em;
-  }
-  
-  a
-  h1, a {
-    
-    text-decoration: none;
-    display: inline-block;
-  }
-  
+body {
+  margin-bottom: 50px; // Adjust the value as needed
+}
 
-  .arrow a:hover {
-    color: $hover-color;
-    
-  }
- 
-  /* added color to h1/title when mouse hovers it */
-  .header a:hover {
-    color: $hover-color;
-  }
-  
-  /* Allows header(title and nav bar) to stay at the top of the page */
-  .header {
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    width: 100%;
-    display: flex;
-    padding: 10px;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 10px;
-  }
+img {
+  max-width: 100%;
+  gap: 2em;
+}
 
-  /* Selects spacing of content in containers */
-  .container {
-    background-color: $bg-color;
-    color: $text-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  /* Selects spacing of content in box class */
-  .container .box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  /* Adds columns to box class */
-  .container .box .mySlides {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-  }
-  
-  /* Allows all images to have the same size in the columns */
-  .container .box .mySlides img {
-    width: 100%;
-    padding-bottom: 15px;
-    border-radius: 5px;
-  }
-  
-  .navbar {
-    background-color: $bg-color;
-     color: $text-color;
-    margin: 15px 22px;
-    display: flex;
-    font-size: 20px;
-  }
-  
-  /* Items on the nav bar will be spaced out by 14px */
-  .navbar li {
-    padding: 14px;
-  }
-  
-  .navbar a:hover {
-    color: $hover-color;
-  }
-  
-  #coffee-cup {
-    color: $text-color;
-    font-size: 2rem;
-  
-  }
-  
-  /* Removes dots from nav bar list */
-  ul {
-    list-style-type: none;
-    margin: 28;
-    padding: 0;
-  }
+a {
+  text-decoration: none;
+  display: inline-block;
+}
 
-  h1 {
-    margin: 15px 22px;
-  }
-  
-  .prev {
-    background-color: $bg-color;
-    color: $text-color;
-    text-decoration: none;
-  }
+.header a:hover {
+  color: $hover-color;
+}
 
-  .caption-container {
-    text-align: center;
-    background-color: $bg-color;
-    padding: 2px 16px;
-    color: $text-color;
-  }
+.header {
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
 
-  .next {
-    background-color: $bg-color;
-    color: $text-color;
-    text-decoration: none;
-  }
-  
-  
-  /* Listed items will be aligned to the left */
-  li {
-    float: left;
-    display: block;
-  }
-  
+.container {
+  background-color: $bg-color;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container .box .images {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.container .box .images img {
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+.navbar {
+  background-color: $bg-color;
+  color: $text-color;
+  margin: 15px 22px;
+  display: flex;
+  font-size: 20px;
+}
+
+.navbar li {
+  padding: 14px;
+}
+
+.navbar a:hover {
+  color: $hover-color;
+}
+
+#coffee-cup {
+  color: $text-color;
+  font-size: 2rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 28;
+  padding: 0;
+}
+
+h1 {
+  margin: 15px 22px;
+}
+
+.btns button:hover {
+  background-color: $hover-color;
+  color: $bg-color;
+}
+
+.hide {
+  display: none;
+}
+
  
   
   
