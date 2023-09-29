@@ -8,11 +8,12 @@ const imgFilter = (e) => {
     const image = imageContainer.querySelector('.cafe');
     const title = imageContainer.querySelector('h3');
     
-    if (cityName === 'all' || image.dataset.name === cityName) {
-      
-      imageContainer.classList.remove('hide');
+    if (cityName === 'All') {
+      imageContainer.classList.remove('hide'); // Show all images for the "All" button
+    } else if (image.dataset.name === cityName) {
+      imageContainer.classList.remove('hide'); // Show images with matching data-name
     } else {
-      imageContainer.classList.add('hide');
+      imageContainer.classList.add('hide'); // Hide other images
     }
   });
 };
